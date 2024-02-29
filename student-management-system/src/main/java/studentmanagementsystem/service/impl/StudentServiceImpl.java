@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import studentmanagementsystem.dto.StudentDto;
 import studentmanagementsystem.entity.Student;
@@ -36,6 +37,13 @@ public class StudentServiceImpl implements StudentService {
       StudentDto studentDto = StudentMapper.mapToStudentDto(student);
      return studentDto;
     }
-
+    @Override
+    public void updateStudent(StudentDto studentDto) {
+        studentRepository.save(StudentMapper.mapToStudent(studentDto));
+    }
+    @Override
+    public void deleteStudent(Long studentId) {
+      studentRepository.deleteById(studentId);
+    }
     
 }
