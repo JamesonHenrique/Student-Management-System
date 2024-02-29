@@ -6,4 +6,6 @@ import studentmanagementsystem.dto.StudentDto;
 
 public interface StudentService {
    List<StudentDto> getAllStudents();
+
+void createStudent(StudentDto studentDto);
 }
