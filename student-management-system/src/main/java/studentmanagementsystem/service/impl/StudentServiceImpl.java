@@ -1,6 +1,7 @@
 package studentmanagementsystem.service.impl;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
@@ -28,6 +29,12 @@ public class StudentServiceImpl implements StudentService {
     public void createStudent(StudentDto studentDto) {
        Student student = StudentMapper.mapToStudent(studentDto);
        studentRepository.save(student);
+    }
+    @Override
+    public StudentDto getStudentById(Long studentId) {
+      Student student = studentRepository.findById(studentId).get();
+      StudentDto studentDto = StudentMapper.mapToStudentDto(student);
+     return studentDto;
     }
 
     
