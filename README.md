@@ -1,12 +1,12 @@
 # Sistema de Gerenciamento de Estudantes :mortar_board:
 
-Este é um projeto de sistema de gerenciamento de estudantes desenvolvido com Java, Spring Boot e Maven:
+Este é um projeto de sistema de gerenciamento de estudantes desenvolvido com Java, Spring Boot e Maven. :computer:
 
-## Descrição
+## :clipboard: Descrição
 
 O sistema permite que os usuários realizem operações de CRUD (Criar, Ler, Atualizar, Deletar) em registros de estudantes. Cada estudante tem um ID, nome, sobrenome e email.
 
-## :Tecnologias Utilizadas
+## :wrench: Tecnologias Utilizadas
 
 - Java
 - Spring Boot
@@ -14,7 +14,7 @@ O sistema permite que os usuários realizem operações de CRUD (Criar, Ler, Atu
 - JPA/Hibernate
 - Thymeleaf
 
-##  Configuração
+## :gear: Configuração
 
 Para rodar este projeto, você precisa ter o Java e o Maven instalados em seu sistema.
 
@@ -22,16 +22,9 @@ Para rodar este projeto, você precisa ter o Java e o Maven instalados em seu si
 2. Navegue até a pasta do projeto via terminal.
 3. Execute o comando `mvn spring-boot:run` para iniciar a aplicação.
 
-##  Estrutura do Projeto
-
-O projeto segue a estrutura padrão do Maven:
-
-- `src/main/java`: Contém o código fonte do projeto.
-- `src/main/resources`: Contém recursos como templates e arquivos de propriedades.
-- `src/test`: Contém os testes unitários.
-
-
 ## :handshake: Contribuição
 
 Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
+
+Feito com :heart: e Java.
